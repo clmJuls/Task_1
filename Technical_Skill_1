@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-CjSoe/xxl4J8NA2oN6QNqk0mH9v0X3EY2Ldu9AAhZJpZ/Rf6OqSL9UU9EOhXdoj3"
+      crossorigin="anonymous"
+    ></script>
+    <title>Job Match Pro</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        max-height: 100%;
+        height: 100%;
+        background: rgb(66, 65, 65);
+        background: linear-gradient(
+          90deg,
+          rgba(66, 65, 65, 1) 0%,
+          rgba(235, 208, 213, 1) 100%
+        );
+      }
+      .font-size {
+        font-size: 35px;
+        font-weight: 800;
+        font-family: "Oxygen", sans-serif;
+        border-radius: 5%;
+        height: 70px;
+        background: -webkit-linear-gradient(#2967ca, #000000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .opacity-text {
+        opacity: 50%;
+      }
+      .max-height {
+        max-height: 100%;
+        min-height: auto;
+      }
+      .word-spacing {
+        word-spacing: 60px;
+      }
+      .word-spacing-auto {
+        word-spacing: 1px;
+      }
+      .photo-img img {
+        max-height: 100%;
+        object-fit: cover;
+        width: 100%;
+        opacity: 80%;
+        border-radius: 1%;
+      }
+      .overlay-text {
+        position: absolute;
+        padding-top: 13vh;
+        max-height: 100%;
+        max-width: 100%;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        transform: translate(-50%, -50%);
+        color: black;
+        border-radius: 15%;
+      }
+      .dm-serif-display-regular {
+        font-family: "DM Serif Display", serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      .dm-serif-display-regular-italic {
+        font-family: "DM Serif Display", serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+
+      .rectangle {
+        width: 100px;
+        height: 50px;
+        background: gold;
+      }
+
+      @media (max-width: 768px) {
+        .photo-column {
+          flex-direction: column;
+        }
+        .overlay-text {
+          position: absolute;
+          font-size: 24px;
+          padding-top: 7vh;
+        }
+        .navbar.navbar-text {
+          font-size: 14px;
+        }
+        .font-size {
+          font-size: 24px;
+        }
+        .photo-img img {
+          position: relative;
+          height: auto;
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg max-height font-weight-bold text-white"
+      style="background-color: #9a9899; height: 60px"
+    >
+      <div
+        class="container-fluid mw-50"
+        alt="Max-width 50%"
+        style="max-width: 100%"
+      >
+        <p>
+          <a
+            class="navbar-brand link-success px-lg-5 font-size"
+            href="#"
+            style="padding-top: 20px; color: #151515"
+            >Job Match Pro</a
+          >
+        </p>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding: 60px">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white opacity-text"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tiktok</a></li>
+                <li><a class="dropdown-item" href="#">Shoppe</a></li>
+                <li><a class="dropdown-item" href="#">Lazada</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Pages</a>
+            </li>
+          </ul>
+        </div>
+        <span class="navbar-text opacity-text">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="19"
+            height="19"
+            fill="currentColor"
+            class="bi bi-person"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+            />
+          </svg>
+          Login/Register
+        </span>
+      </div>
+    </nav>
+    <div class="container py-lg-5" style="height: 100%">
+      <div class="row container-fluid" style="height: 100%">
+        <div class="col-lg-6 col-md-12" style="height: 50vh">
+          <div class="photo-img">
+            <img
+              src="https://media.licdn.com/dms/image/D4D12AQFuP_2-t8iF9w/article-cover_image-shrink_720_1280/0/1685820391796?e=2147483647&v=beta&t=8OikRrQMfxdUg8fr2-u9uwnZApfSV_mPdlqNePXWoMw"
+              alt="img"
+              class="img-fluid"
+              style="height: 76vh"
+            />
+
+            <div
+              class="overlay-text dm-serif-display-regular font-join"
+              style="
+                top: 90px;
+                left: 23vh;
+                font-size: 50px;
+                letter-spacing: 0.1em;
+              "
+            >
+              Join now!
+            </div>
+            <div
+              class="overlay-text dm-serif-display-regular"
+              style="
+                top: 140px;
+                left: 23vh;
+                color: #ffffff;
+                font-size: 50px;
+                letter-spacing: 0.1em;
+              "
+            >
+              Join now!
+            </div>
+            <div
+              class="overlay-text dm-serif-display-regular"
+              style="
+                top: 190px;
+                left: 23vh;
+                color: #000000;
+                font-size: 50px;
+                letter-spacing: 0.1em;
+              "
+            >
+              Join now!
+            </div>
+            <div
+              class="overlay-text dm-serif-display-regular"
+              style="
+                top: 240px;
+                left: 23vh;
+                color: #ffffff;
+                font-size: 50px;
+                letter-spacing: 0.1em;
+              "
+            >
+              Join now!
+            </div>
+            <div
+              class="overlay-text dm-serif-display-regular"
+              style="
+                top: 290px;
+                left: 23vh;
+                color: #000000;
+                font-size: 50px;
+                letter-spacing: 0.1em;
+              "
+            >
+              Join now!
+            </div>
+            <div style="height: 50%; width: 50%; background-color: #000000">
+              <div
+                class="overlay-text dm-serif-display-regular"
+                style="
+                  top: 80vh;
+                  left: 100px;
+                  font-size: 12px;
+                  color: #ffffff;
+                  letter-spacing: 0.1em;
+                "
+              >
+                tel+ (+63) 9763650797
+              </div>
+              <div
+                class="overlay-text dm-serif-display-regular"
+                style="
+                  top: 83vh;
+                  left: 18vh;
+                  font-size: 12px;
+                  color: #ffffff;
+                  letter-spacing: 0.1em;
+                "
+              >
+                Email: jobmatchpro@gmail.com
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="photo-img">
+            <img
+              src="https://d2mrsnb46xvx0x.cloudfront.net/wp-content/uploads/2019/07/landing_a_job-900x500.jpg"
+              alt="img"
+              class="img-fluid"
+            />
+          </div>
+          <div class="row mt-3">
+            <div class="col-lg-6 col-md-6 col-12 mb-3">
+              <div class="photo-img">
+                <img
+                  src="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2022/05/23160635/10-Tips-to-Get-Hired-Fast-1024x512.jpg"
+                  alt="img"
+                  class="img-fluid"
+                  style="height: 36vh"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 mb-3">
+              <div class="photo-img">
+                <img
+                  src="https://opportunitydesk.org/wp-content/uploads/2020/05/How-to-Increase-Your-Chances-of-Getting-a-Job.jpg"
+                  alt="img"
+                  class="img-fluid"
+                  style="height: 36vh"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
